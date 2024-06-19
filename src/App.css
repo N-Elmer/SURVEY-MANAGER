@@ -1,0 +1,85 @@
+/* App.css */
+.bg-gradient-animation {
+  background: linear-gradient(270deg, #ffffff, #a9c2ee, #7dbfe6);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure main content has some padding to not overlap with the sticky footer */
+main {
+  padding-bottom: 4rem; /* Space for footer */
+}
+
+/* Ensure button is properly positioned */
+button.fixed.bottom-4.right-4 {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+}
+
+/* App.css */
+.center-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* Reduce the space between the text and the button row */
+.center-content h1 {
+  margin-bottom: 0rem; /* Adjust the bottom margin of the header */
+}
+
+/* Adjust the space between the button row */
+.center-content .space-x-4 {
+  margin-top: 50rem; /* Adjust the top margin of the button row */
+}
+
+/* Optional styling for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.button-large {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 1rem 2rem; /* Increased padding */
+  font-size: 1.25rem; /* Larger font size */
+  border-radius: 0.3rem; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allows padding and width/height */
+  margin-right: 1rem; /* Space between buttons */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.button-large:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.scroll-to-top {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 1rem; /* Increased padding */
+  font-size: 1rem; /* Font size */
+  border-radius: 0.3rem; /* Rounded corners */
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
